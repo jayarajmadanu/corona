@@ -6,3 +6,6 @@ filter(complete,complete$Name.of.State...UT=="Telengana") %>%
   ggplot(aes(Date,Total.Confirmed.cases))+geom_point()
 
 
+filter(complete,complete$Name.of.State...UT=="Telengana") %>% 
+  summarize(sum(New.cases,rm.na=T),mean(New.cases,rm.na=T))
+
